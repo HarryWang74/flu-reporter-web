@@ -1,0 +1,17 @@
+.googleAd{
+    border-top: 1px dashed $base-border-color;
+    border-bottom: 1px dashed $base-border-color;
+    margin-top: 3em;
+    .adsbygoogle{
+        background-color: $base-border-color;
+        margin: 3em 0em;
+    }
+    @media (max-width: 991px){
+        .adsbygoogle{
+            margin-bottom: 1.5em;
+        }
+        .lastAd .adsbygoogle{
+            margin-bottom: 3em;
+        }
+    }
+}

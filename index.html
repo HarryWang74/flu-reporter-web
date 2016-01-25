@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-152.png" sizes="152x152">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-144.png" sizes="144x144">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-120.png" sizes="120x120">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-114.png" sizes="114x114">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-76.png" sizes="76x76">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-72.png" sizes="72x72">
+<link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon.png">
+
+<script type="text/javascript" src="https://www.google.com/jsapi/"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<script src="javascripts/vendors.min.js"></script>
+<script src="javascripts/application.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/vendors.css?n=01">
+<link rel="stylesheet" href="stylesheets/application.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67607531-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-static-top">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/" ><img class="img-responsive" src="/images/logo.svg"></a>
+
+          
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="myNav" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/transition"><i class="fa fa-map-marker"></i>All regons</a></li>
+            <li><a href="#/about"><i class="fa fa-info-circle"></i>About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+</nav>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 intro">
+        <p>Flu-Reporter presents a view of web search volume on flu related information that people did in past 7 days. Search volume is displayed as a number. In the scale of 0 to 100, the closer to 100 the number is, the more searches are entered. It indicates the increasing public concerns and flu cases. </p>
+        <p>As default, Flu-Reporter provides the data at user's current location. But you can also check search trend across various regions on <a href="#/transition">all regions page</a>.</p>
+        <p>These data may assist public health department in flu season, or help general users.</p>
+        <p><small>* Data Source: Google Trends</small></p>
+        </div>
+        <div class="col-sm-8 toutsContainer">
+          <a class="tout" target="_balnk" href="https://itunes.apple.com/us/app/flu-reporter/id1059544347">
+          <img src="/images/header/tout-apple.png"></a>
+          <a class="tout" target="_balnk" href="https://play.google.com/store/apps/details?id=com.ionicframework.flureporter600871"><img src="/images/header/tout-android.png"></a>
+        </div>
+        <div class="col-sm-4">
+          <img class="img-responsive doctor" src="/images/header/doctors.svg" >
+        </div>
+    </div>
+</div>
+
+</header>
+
+<div data-ng-view class="shuffle-animation"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"><p><small>&copy; All rights reserved. Built with Angular, SASS &amp; Grunt.</small></p></div>
+            <div class="col-md-4 text-right">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

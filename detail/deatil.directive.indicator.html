@@ -1,0 +1,22 @@
+<div id="regularPanel" class="row regularPanel" data-ng-show="vm.currentLocation.less100">
+            <div class="col-sm-4 description">
+                <img src="images/search-title.png" class="img-responsive">
+            </div>
+
+            <div class="col-sm-8 numbers">
+                <p id="searchVolume" ng-class="vm.currentLocation.color">{{ vm.currentLocation.searchVolume }}</p>
+                <img class="reporter" src="/images/reporterSick.svg">
+            </div>            
+</div>
+
+<div class="row hundred-panel" data-ng-hide="vm.currentLocation.less100">            
+            <div class="col-sm-4 description">
+                <img src="images/search-title.png" class="img-responsive">
+            </div>
+            
+            <div class="col-sm-8 numbers">
+                <p id="hundred" ng-class="vm.currentLocation.color">1<span>00</span></p>
+                <img class="reporter" src="/images/reporterSick.svg"></div>
+            </div>
+        </div>
+</div>

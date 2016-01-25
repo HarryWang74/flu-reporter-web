@@ -1,0 +1,21 @@
+.errorPanel{
+        h1{ 
+            font-size: 3.5em;
+            margin-bottom: 0em;
+        }
+        p{
+            color: $base-main-color;
+            font-size: 1.8em;
+            span{ font-size: 130%; }
+        }
+        .panelBtm{
+            margin-top: 2em;
+            img{
+                float:right;
+            }
+            
+        }
+        .button{
+            font-size: 0.5em;
+        }
+}

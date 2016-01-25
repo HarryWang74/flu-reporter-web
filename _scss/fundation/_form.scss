@@ -1,0 +1,26 @@
+label{
+}
+
+label.error {
+}
+
+input[type=text], 
+textarea.form-control, 
+input[type=email], 
+input[type=password], 
+input[type=tel], 
+input[type=url], 
+input[type=search], 
+input[type=date]{
+    padding: 10px!important;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
+    background-color: #efefef;
+    @include i-round-corners(0px);
+    @include i-transition(all, 0.2s, linear);
+    @include i-box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.09), inset);
+}

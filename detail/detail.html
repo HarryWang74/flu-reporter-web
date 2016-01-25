@@ -1,0 +1,32 @@
+<loading-animation></loading-animation>
+
+<section class="detail">
+<div class="container">
+    <div class ="row">
+        <div class="col-xs-12">
+            <div data-ng-show="vm.infoPanel">
+                <h1>{{ vm.currentLocation.countryName }} > {{ vm.currentLocation.regionName }}</h1>
+               
+                <flu-indicator></flu-indicator>
+                <flu-progress value="vm.currentLocation.progressbarVolume"></flu-progress>
+                
+                <a class="button otherReg"  href="#/transition" role="button"><span>other regions</span><i class="fa fa-angle-double-right"></i></a>	
+            </div>			
+        </div>
+    </div>
+
+    <error-panel></error-panel>
+
+    <div class ="row">
+        <div class="col-md-12 topList">
+            <iframe id="regList" width="100%" height="400" frameborder="0" data-ng-show="vm.regionListing" ng-src="{{vm.currentLocation.topListURL}}"></iframe>
+        </div>
+    </div>
+
+    <div class ="row">
+        <div class="col-md-12 topList">
+            <iframe id="regList" width="100%" height="400" frameborder="0" data-ng-show="vm.cityListing" ng-src="{{vm.currentLocation.topListURL}}"></iframe>
+        </div>
+    </div>
+</div>
+</section>

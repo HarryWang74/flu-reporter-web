@@ -1,0 +1,41 @@
+// ----- Base Colors ----- //
+$base-main-color: #019dd4;
+$base-background-color: #ffffff;
+$base-heading-color: $base-main-color;
+$base-text-color: #676767;
+$base-link-color: $base-main-color;
+$base-button-text-color: #ffffff;
+$base-border-color: #ddd;
+$base-light-gery: #ebebeb;
+
+$flu-red: #f27340;
+$flu-orange: #ffa920;
+$flu-yellow: #fecf3b;
+$flu-light-green: #9bbb58;
+$flu-dark-green: #488b62;
+
+
+// ----- Base fonts ----- //
+@font-face {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titan One'), local('TitanOne'), url('http://www.flu-reporter.info/fonts/PlYPmiP_CtYdrNbFSe11D4X0hVgzZQUfRDuZrPvH3D8.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titan One'), local('TitanOne'), url('http://www.flu-reporter.info/fonts/v4/WPXWYAi7p51wpAczQ2NVnJBw1xU1rKptJj_0jans920.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+$base-heading-fontFamily: 'Titan One', cursive, Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-text-fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-fontSize: 1em;
+$base-lineHeight: 1.5;
+
+//--- Hover strength ---//
+$base-hover-strength: 10;

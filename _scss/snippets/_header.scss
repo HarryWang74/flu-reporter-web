@@ -1,0 +1,130 @@
+header{
+    background: $base-main-color;
+    padding-top: 2em;
+    margin-bottom: 3em;
+    .logo{
+        font-family: $base-heading-fontFamily;
+        color: #fff;
+        font-size: 3.5em;
+    }
+    .doctor{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .toutsContainer{
+        margin: 1.5em 0em;
+        p{
+            color: #fff;
+        }
+        .tout{
+            display: inline-block;
+            margin-right: 1em;
+        }
+    }
+    .intro p{
+        font-size: 1.4em;
+        color: #fff;
+        margin-bottom: 1em;
+        span{
+            font-size: 140%;
+            font-weight: bold;
+        }
+        small{font-size: 50%;}
+        a{
+            color:#fff;
+            text-decoration: underline;
+        }
+        a:hover{
+            color: #23527c;
+        }
+    }
+    .navbar-header{
+        margin-bottom: 1em;
+    }
+    .navbar-default{
+        border: none;
+        background-color: transparent;
+        margin-bottom: 0px;
+        .navbar-nav{
+            margin-top: 10px;
+            li{
+                a{
+                    color: #fff;
+                    font-size: 1.8em;
+
+                }
+            }
+        }
+    }
+    .navbar-brand{
+        height: auto;
+        img{
+            width: 450px;
+        }
+    }
+    .navbar-default .navbar-toggle {
+        padding: 10px;
+        border: 2px solid #fff;
+    }
+    .navbar-default .navbar-toggle:hover, 
+    .navbar-default .navbar-toggle:active, 
+    .navbar-default .navbar-toggle:focus{
+        background: #fff;
+    }
+    .navbar-default .navbar-toggle:hover .icon-bar,  
+    .navbar-default .navbar-toggle:active .icon-bar,
+    .navbar-default .navbar-toggle:focus .icon-bar{
+        background-color: $base-main-color;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+   i.fa{display: none;}
+}
+
+@media (max-width: 991px){
+    header .navbar-brand img {  }
+    header .navbar-default .navbar-nav li a { font-size: 1.4em; }
+    header .doctor{ margin-top:20px; }
+}
+
+@media (max-width: 767px){
+    header .intro p { font-size: 1em; }
+    header .doctor{ 
+        width: 80%;  
+        float: right; 
+        margin-top: 0em;
+    }
+    .toutsContainer { margin-bottom: 1.5em; }
+    .toutsContainer .tout{ margin-top: 1em;}
+    header .navbar-default .navbar-nav { 
+        margin-top: 0px; 
+        margin-bottom:30px; 
+    }
+    header .navbar-default .navbar-nav li a{
+        background: #fff;
+        color: $base-main-color;
+        border-bottom: 1px solid $base-main-color;
+        padding: 0.8em;
+    }
+    header .navbar-default .navbar-nav li a:hover{ background-color: $base-light-gery; }
+    header i.fa{ 
+        display: inline-block;
+        margin-right: 0.4em;
+    }
+    header .intro p small{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    header .navbar-default .navbar-toggle{border: none;}
+    header .navbar-brand img{ max-width: 210px; }
+    header .navbar-header { margin-bottom: 0px; }
+    header .navbar-default .navbar-nav li a{font-size:1em;}
+    header .toutsContainer {margin: 20px 0px}
+    header {margin-bottom: 20px; padding-top: 20px;}
+
+}

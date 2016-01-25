@@ -1,0 +1,72 @@
+<section class="listing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>All Regions</h1>
+
+
+
+<div class="panel-group" id="continentPanel" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default continentWrapper" ng-repeat ="continent in vm.regionData"><!-- loop continent -->
+
+    <!-- continent header -->
+    <div class="panel-heading continentHeader" role="tab">
+        <h2 class="panel-title">
+            <a role="button" class="hasIcon collapsed" data-toggle="collapse" data-parent="#continentPanel" href="#{{continent.code}}Continent" aria-expanded="false" aria-controls=" {{continent.code}}">
+               <i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>
+                {{ continent.name }}
+            </a>
+        </h2>
+    </div>
+    <!-- /continent header -->
+
+    <!-- continent body -->
+    <div id="{{continent.code}}Continent" class="panel-collapse collapse" role="tabpanel">
+        <div class="panel-body">
+            <div class="panel-group" id="{{continent.code}}1" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" ng-repeat ="country in continent.countries"><!-- loop country -->
+                <!-- country header -->
+                <div class="panel-heading" role="tab">
+                    <h2 class="panel-title">
+                    <a role="button" class="hasIcon collapsed" data-parent="#{{continent.code}}1" data-toggle="collapse" href="#{{country.code}}" aria-expanded="false" aria-controls=" {{country.code}}">
+                        <i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>
+                        {{ country.name }}
+                    </a>
+                    </h2>
+                </div>
+                <!-- / country header -->
+
+                <!-- country body -->
+                <div id="{{country.code}}" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li ng-repeat ="region in country.regions">
+                                <a href="#/{{country.code | lowercase}}/{{region.code | lowercase}}" ng-click="vm.updateUserData()">
+                                    <i class="fa fa-map-marker"></i>
+                                    {{region.name}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / country body -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- continent body -->
+
+</div>
+
+</div>
+
+            <div class="col-md-12 text-right bottomImg">
+                <img class="img-responsive" src="/images/reporterTravel.png">
+            </div>
+            
+        </div>
+    </div>
+
+    </div>
+</section>

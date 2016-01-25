@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "vendors.css",
+  "sources": [
+    "_vendors/bootstrap/css/bootstrap.min.css",
+    "_vendors/font-awesome/css/font-awesome.min.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,mswH;ACbA;AACA;AACA;AACA;A"
+}

@@ -1,0 +1,61 @@
+/*----- Box -----*/
+@mixin i-box($width: 100%, $height: 100px) {
+    width: $width;
+    height: $height;
+}
+
+
+/*----- Background -----*/
+@mixin i-background($imageUrl, $repeat, $position) {
+    background : {
+        image    : image-url($imageUrl);
+        repeat   : $repeat;
+        position : $position;
+    }
+}
+
+/*----- Corners and Borders -----*/
+@mixin i-round-corners($radius: 5px) {
+    -webkit-border-radius: $radius;// Safari
+    -moz-border-radius: $radius;// For Mozilla
+    -o-border-radius: $radius;// For Opera
+    -khtml-border-radius: $radius;// For old Safari, KHTML
+    border-radius: $radius;
+}
+
+@mixin i-round-four-corners($leftTopRadius: 5px, $rightTopRadius: 5px, $rightButtomRadius: 5px, $leftBottomRadius: 5px) {
+    -webkit-border-radius: $leftTopRadius $rightTopRadius $rightButtomRadius $leftBottomRadius;
+    -moz-border-radius: $leftTopRadius $rightTopRadius $rightButtomRadius $leftBottomRadius;
+    -o-border-radius: $leftTopRadius $rightTopRadius $rightButtomRadius $leftBottomRadius;
+    -khtml-border-radius: $leftTopRadius $rightTopRadius $rightButtomRadius $leftBottomRadius;
+    border-radius: $leftTopRadius $rightTopRadius $rightButtomRadius $leftBottomRadius;
+}
+
+//---- transition ----//
+@mixin i-transition($property, $duration, $effect){
+    transition: $property $duration $effect;
+    -webkit-transition: $property $duration $effect;
+    -o-transition: $property $duration $effect;
+    -moz-transition: $property $duration $effect;
+}
+
+//---- transform ----//
+@mixin i-transform($property){
+    transform: $property;
+    -moz-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    -webkit-transform: $property;
+}
+
+@mixin i-box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: $top $left  $blur $color inset;
+        -moz-box-shadow:$top $left  $blur $color inset;
+        box-shadow:$top $left  $blur $color inset;
+    } @else {
+        -webkit-box-shadow: $left $top $blur $color;
+        -moz-box-shadow: $left $top $blur $color;
+        box-shadow: $left $top $blur $color;
+    }
+}

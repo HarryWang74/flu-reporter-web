@@ -1,0 +1,12 @@
+footer{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    background: $base-main-color;
+    margin-top: 3em;
+    p, ul li a{
+        color: #fff;
+    }
+    ul li a:hover{
+        text-decoration: underline;
+    }
+}

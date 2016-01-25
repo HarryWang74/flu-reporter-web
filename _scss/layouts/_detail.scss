@@ -1,0 +1,112 @@
+.detail{
+    h1{
+        margin-bottom: 0px;
+    }
+
+    .progress{
+        height: 153px;
+        background-color: #fff;
+        background-image: url('/images/progress-bar-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include i-round-corners(0em);
+        @include i-box-shadow(0em, 0em, 0em, 0em, #fff);
+        .progress-bar{
+            background-image: url('/images/progress-bar-marker.png');
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-size: cover;
+            @include i-round-corners(0em);
+            @include i-box-shadow(0em, 0em, 0em, 0em, #fff);
+        }
+    }
+    .hundred-panel{
+        .description{
+            img{
+                margin-top: 80px;
+            }
+        }
+        .numbers{
+            position: relative;
+            background-image: url('/images/germ-reg-hundred.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 27% 10%;
+            p{
+                font-family: $base-heading-fontFamily;
+                font-size: 400px;
+                line-height: 0.9;
+                span{
+                    font-size: 80%;
+                }
+            }
+            .reporter{
+                position:absolute;
+                bottom: 10px;
+                right: 0px;
+                width: 12%;
+            }
+        }
+    }
+
+    .regularPanel{
+        .description{
+            img{
+                margin-top: 100px;
+            }
+        }
+        .numbers{
+            position: relative;
+            background-image: url('/images/germ-reg.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 40% 5%;
+            p{
+                font-family: $base-heading-fontFamily;
+                line-height: 0.9;
+                span{
+                    font-size: 80%;
+                }
+            }
+            .reporter{
+                position:absolute;
+                bottom: 10px;
+                right: 0px;
+            }
+        } 
+    }
+    .flu-red{ color: $flu-red; }
+    .flu-orange { color: $flu-orange; }
+    .flu-yellow { color: $flu-yellow; }
+    .flu-light-green { color: $flu-light-green; }
+    .flu-dark-green { color: $flu-dark-green; }
+    .button.otherReg{
+        float: right;
+    }
+    @media (max-width: 991px){
+        .button{
+            float: left;
+        }
+    }
+    @media (max-width: 767px){
+        h1{
+            margin-bottom: 40px;
+        }
+        .hundred-panel .description img, .regularPanel .description img{
+            margin-top: 0px;
+        }
+    }
+    .transition{
+        i{
+            font-size: 60px;
+            color: $base-main-color
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .detail .regularPanel .numbers{ margin-top: 20px; }
+    .detail .regularPanel .numbers .reporter {right: 20px; bottom: 0px;}
+    .detail .hundred-panel .numbers .reporter {right: 20px;}
+}
