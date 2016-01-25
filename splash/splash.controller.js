@@ -37,7 +37,7 @@ failToGetLocation
     }
 
     function loadRegionsDataComplete(){
-        console.log("region data ready");
+        // console.log("region data ready");
         //$location.path('/listing');
         // console.log(regionsDataServices.getRegionsData());
         // $location.path('listing');
@@ -66,7 +66,7 @@ failToGetLocation
     }
 
     function geoLocationReverseComplete(data){
-        console.log("Reverse user geoLocation Complete");
+        // console.log("Reverse user geoLocation Complete");
         // console.log(data.data.countryCode);
         // console.log(data.data.codes[1].code);
         // console.log(data);

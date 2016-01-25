@@ -104,8 +104,8 @@ function detailController($sce, googleDataServices, regionsDataServices, $routeP
     }
 
     function foundMatchingDataFromGoogle(data){
-        console.log("found matching data from google");
-        console.log(data);
+        // console.log("found matching data from google");
+        // console.log(data);
 
         vm.currentLocation.searchVolume = data;
         vm.currentLocation.topListURL = $sce.trustAsResourceUrl("http://www.google.com/trends/fetchComponent?q=flu&geo=" + vm.currentLocation.regionFilter + "&date=now+7-d&cmpt=q&tz=Etc/GMT-10&tz=Etc/GMT-10&content=1&cid=GEO_TABLE_0_0&export=5");

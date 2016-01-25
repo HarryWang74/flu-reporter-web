@@ -525,8 +525,8 @@ function detailController($sce, googleDataServices, regionsDataServices, $routeP
     }
 
     function foundMatchingDataFromGoogle(data){
-        console.log("found matching data from google");
-        console.log(data);
+        // console.log("found matching data from google");
+        // console.log(data);
 
         vm.currentLocation.searchVolume = data;
         vm.currentLocation.topListURL = $sce.trustAsResourceUrl("http://www.google.com/trends/fetchComponent?q=flu&geo=" + vm.currentLocation.regionFilter + "&date=now+7-d&cmpt=q&tz=Etc/GMT-10&tz=Etc/GMT-10&content=1&cid=GEO_TABLE_0_0&export=5");
@@ -673,7 +673,7 @@ failToGetLocation
     }
 
     function loadRegionsDataComplete(){
-        console.log("region data ready");
+        // console.log("region data ready");
         //$location.path('/listing');
         // console.log(regionsDataServices.getRegionsData());
         // $location.path('listing');
@@ -702,7 +702,7 @@ failToGetLocation
     }
 
     function geoLocationReverseComplete(data){
-        console.log("Reverse user geoLocation Complete");
+        // console.log("Reverse user geoLocation Complete");
         // console.log(data.data.countryCode);
         // console.log(data.data.codes[1].code);
         // console.log(data);
